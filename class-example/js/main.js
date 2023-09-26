@@ -109,7 +109,7 @@ const createDescription = () => {
         user_name: document.createElement('h2'),
         age: document.createElement('h3'),
         description: document.createElement('p'),
-        bands: [],
+        bands: document.createElement('ul'),
     }
     return userElements;
 }
@@ -119,19 +119,19 @@ const populateElements = (user, userElements) => {
     userElements.age.textContent = user.age;
     userElements.description.textContent = user.description;
 
-    const bandList = user.fav_music.bands.map(e => {
-        const pElement = document.createElement('p');
-        pElement.textContent = e;
-        return pElement;
-    })
+    for(let band of user.fav_music.bands ) {
+        console.log(band);
+        let bandElement = document.createElement('li');
+        bandElement.textContent = band;
+        userElements.bands.appendChild(bandElement);
+    }
 
-    userElements.bands = bandList;
     return userElements;
 }
 
 
 const renderElements = (card, elements) => {
-    card.append(elements.user_name, elements.age, elements.description);
+    card.append(elements.user_name, elements.age, elements.description, elements.bands);
 }
 
 users.forEach(user => {
