@@ -12,20 +12,16 @@
     <body>
 
         <div class='main container'> 
-            <h1 id='title1'>Manipulacion del DOM</h1>
-            <h2 class='subtitulo'>Eventos<h2>
+            <h1 id='title1'>Dom API</h1>
             <h3 class='subtitulo'>DOM + JS<h3>
-            <label for='name'>Name</label>
-            <input id='name' type="text" name="username" value="">
-            <button id='ProfileBtn'>Actualizar perfil</button>
-        </div>
-
-
-        <div class='profile container'>
-            <h2 id='username'></h2>
-            <h3 id='age'></h3>
-            <p id='mail'></p>
-            <ul id='fav-films'></ul>
+            <label for='username'>User Name</label>
+            <input id='user-name' type="text" name="user-name" value="">
+            <label for='user-age'>User Age</label>
+            <input id='user-age' type="number" name="user-age" value="">
+            <label for='user-email'>Email Address</label>
+            <input id='user-email' type="text" name="user-email" value="">
+            <br>
+            <button id='ProfileBtn'>Add New User</button>
         </div>
 
         <div id='profiles' class='profiles container'></div>

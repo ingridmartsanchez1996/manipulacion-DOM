@@ -14,6 +14,9 @@ button {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    margin-top: 10px; /* Add margin to push the button to its own line */
+    text-align: center;
+    display: block; /* Make labels appear on their own line */
 }
 
 .container {
@@ -25,6 +28,21 @@ button {
 
 .profile {
     margin: 50px;
+    width: 90%;
     border-radius: 25px;
     background: linear-gradient(#e66465, #9198e5);
+}
+
+/* Center labels and place first name and last name inputs in a single line */
+label {
+    text-align: center;
+    display: block; /* Make labels appear on their own line */
+    margin-bottom: 10px; /* Add some spacing between labels and inputs */
+    margin-top: 10px; /* Add margin to push the button to its own line */
+}
+
+#user-first-name,
+#user-last-name {
+    display: inline-block; /* Make first name and last name inputs appear in the same line */
+    margin-right: 10px; /* Add spacing between first name and last name inputs */
 }
