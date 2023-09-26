@@ -41,8 +41,7 @@ label {
     margin-top: 10px; /* Add margin to push the button to its own line */
 }
 
-#user-first-name,
-#user-last-name {
+#user-name {
     display: inline-block; /* Make first name and last name inputs appear in the same line */
     margin-right: 10px; /* Add spacing between first name and last name inputs */
 }

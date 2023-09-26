@@ -25,6 +25,7 @@ button {
 
 .profile {
     margin: 50px;
+    width: 90%;
     border-radius: 25px;
     background: linear-gradient(#e66465, #9198e5);
 }
